@@ -1,0 +1,76 @@
+<!Doctype html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script src="assets/javascript/game.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" >
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,800|Barrio" rel="stylesheet" >
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" >
+	<title>Crystal Creatures</title>
+</head>
+<body>
+
+	<div id="container">
+
+		<div class="row">
+			<h1 class="col-md-12">Crystal Creatures</h1>
+		</div>
+
+		<div class ="row">
+			<div class="col-md-12" id="instructions">
+				<p>You will be given a random number at the start of the game.</p>
+				<p>There are four crystal creatures below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+				<p>You win the game by matching your total score to the randomly generated number value goal. You lose the game if you get too greedy and exceed it.</p>
+				<p>The value of each cyrstal is hidden from you until you click on it!</p>
+				<p>The crystals will have a new value each time you restart!</p>
+			</div>
+		</div>
+
+		<div class="row" id="float-div">
+
+			<div class="col-md-4 col-sm-12 col-xs-12" id="random-number">
+				<p>Value:</p>
+				<p><span id="greed-goal"></span></p>
+			</div>
+
+			<div class="col-md-4 col-sm-12 col-xs-12" id="total-score">
+				<p>Your total:</p>
+				<p><span id="victim-score"></span></p>
+			</div>
+
+			<div class="col-md-4 col-sm-12 col-xs-12" id="tally">
+				<p>Wins: <span id="wins"></span></p>
+				<p>Losses: <span id="losses"></span></p>
+			</div>
+
+		</div>
+
+		<div class="row" id="crystals">
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<img class="crystal-img img-responsive" id="img0" src="assets/images/beetle.png" height="240" >
+			</div>
+
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<img class="crystal-img img-responsive" id="img1" src="assets/images/mineral.jpg" height="240" >
+			</div>
+
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<img class="crystal-img img-responsive" id="img2" src="assets/images/rainbow.jpg" height="240" >
+			</div>
+
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<img class="crystal-img img-responsive" id="img3" src="assets/images/sherbet.jpg" height="240" >
+			</div>
+		</div>
+
+	</div>
+
+	<footer id="foot">
+		<p>© Copyright 2017 || a simple game of strategy by Lindsay Wall</p>
+	</footer>
+
+</body>
+</html>

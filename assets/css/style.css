@@ -1,0 +1,72 @@
+* {
+	box-sizing: border-box;
+}
+
+#container {
+	margin: 20px auto;
+	line-height: 150%;
+	height: 100%;
+	width: 90%;
+	margin-bottom: -70px;
+}
+
+h1 {
+	font-family: 'Barrio', cursive;
+	letter-spacing: 4px;
+	font-size: 50px;
+	text-align: center;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	background: linear-gradient(#f3bcfb, #a1d7ed);
+}
+
+#foot {
+	height: 70px;
+	background-color: #444;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: 2px;
+	opacity: 0.5;
+	margin-top: 100px;
+	padding-top: 20px;
+}
+
+#instructions,
+#random-number,
+#tally,
+#total-score {
+	background-color: rgba(68, 68, 68, 0.1);
+	color: #444;
+	padding: 20px;
+}
+
+#random-number,
+#tally, #total-score {
+	width: calc(33.3% - 20px);
+	height: 120px;
+	margin: 15px 10px 40px 10px;
+}
+
+#greed-goal, #victim-score,
+#wins, #losses {
+	font-size: 40px;
+}
+
+#instructions {
+	width: 90%;
+	margin: 30px 5% 30px 5%;
+}
+
+.crystal-img,
+#img0, #img1,
+#img2, #img3 {
+	width: 100%;
+}
+
+#img0 {
+	border: 1px solid black;
+}
