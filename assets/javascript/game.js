@@ -34,25 +34,29 @@ function render() {
 // function to compare values and determine win/loss, THEN resets greed, victim, crystals value
 function compare() {
 	if (victim === greed) {
-		alert("You win!");
 		wins++;
+		popu();
+
 		greed = Math.floor(Math.random() * 101) + 19
 		victim = 0
 		valOptions.sort(function sort() { 
 			return (Math.round(Math.random()) - 0.5) 
 		});
+
 		crystalNumb();
 		render();
 	}
 
 	else if (victim > greed) {
-		alert("You were too greedy! You lose!");
 		loss++;
+		popu();
+
 		greed = Math.floor(Math.random() * 101) + 19
 		victim = 0
 		valOptions.sort(function sort() { 
 			return (Math.round(Math.random()) - 0.5) 
 		});
+
 		crystalNumb();
 		render();
 	}
@@ -65,3 +69,20 @@ function crystalNumb() {
 		$("#img" + i).attr("data-crystalValue", valOptions[i]); 
 	}
 } 
+
+function popu() {
+	if (victim === greed) {
+		$("<div id='pop'>Omg! You win! Imaginary confetti falls in your lap.</div>").addClass(".popClass").appendTo(".heading");
+	}
+
+	else {
+		$("<div id='pop'>Oops! You were too greedy. You lose.</div>").addClass(".popClass").appendTo(".heading");
+	}
+
+	var myTimer = setTimeout(popuDele, 2500);
+
+	function popuDele() {
+	$("div").remove("#pop");
+	clearTimeout(myTimer);
+}
+}
