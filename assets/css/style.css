@@ -66,14 +66,11 @@ body {
 #img0, #img1,
 #img2, #img3 {
 	width: 100%;
-}
-
-#img0 {
 	border: 1px solid black;
 }
 
 .popClass, #pop {
-	margin: 0 25%;
+	margin: 0 24%;
 	padding: 50px;
 	position: fixed;
 	top: 200px;
@@ -86,4 +83,22 @@ body {
 	box-shadow: 0 0 20px #777;
 	z-index: 10;
 	transition: all 1s;
+}
+
+@media screen and (max-width: 445px) {
+	#random-number,
+	#tally, #total-score {
+		width: 90%;
+		margin: 30px 5% 30px 5%;
+		text-align: center;
+	}
+
+	#foot {
+		font-size: 14px;
+	}
+
+	.popClass, #pop {
+		top: 50px;
+		font-size: 20px;
+	}	
 }
