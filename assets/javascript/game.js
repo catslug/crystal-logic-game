@@ -31,12 +31,12 @@ function render() {
 	$("#victim-score").text(victim);
 }
 
-// function to compare values and determine win/loss, THEN resets greed, victim, crystals value
+// function to compare values and determine win/loss, then calls functions to alert, reset, render
 function compare() {
 	if (victim === greed) {
 		wins++;
 		popu();
-
+		
 		greed = Math.floor(Math.random() * 101) + 19
 		victim = 0
 		valOptions.sort(function sort() { 
@@ -50,7 +50,7 @@ function compare() {
 	else if (victim > greed) {
 		loss++;
 		popu();
-
+		
 		greed = Math.floor(Math.random() * 101) + 19
 		victim = 0
 		valOptions.sort(function sort() { 
@@ -62,14 +62,14 @@ function compare() {
 	}
 }
 
-// function to assign random numbers to crystals from an array? or just random numbers
+// function to assign random numbers to crystal images from first 4 positions in array
 function crystalNumb() {
-	console.log(valOptions);
 	for (var i = 0; i < valOptions.length; i++) {
 		$("#img" + i).attr("data-crystalValue", valOptions[i]); 
 	}
 } 
 
+// function to alert for win or lose
 function popu() {
 	if (victim === greed) {
 		$("<div id='pop'>Omg! You win! Imaginary confetti falls in your lap.</div>").addClass(".popClass").appendTo(".heading");
@@ -84,5 +84,5 @@ function popu() {
 	function popuDele() {
 	$("div").remove("#pop");
 	clearTimeout(myTimer);
-}
+	}
 }
