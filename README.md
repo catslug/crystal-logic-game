@@ -8,7 +8,6 @@ You can give this curiously entertaining game a try at the live link: https://ca
 Crystal creatures drawn and designed by me.
 
 Technologies used: 
-  
     * HTML
     * CSS
     * Bootstrap
