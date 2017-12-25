@@ -1,4 +1,4 @@
-# week-4-game
+# crystal-logic-game
 crystals! a game of randomness and strategy
 
 You can give this curiously entertaining game a try at the live link: https://catslug.github.io/week-4-game/
